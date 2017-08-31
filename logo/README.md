@@ -1,4 +1,4 @@
-This is the logo UiO iGEM, Made by Can Hicabi Tartanoglu.
+This is the logo for UiO iGEM made by [Can Hicabi Tartanoglu](https://www.linkedin.com/in/canhtartanoglu/).
 
 .pdn is the native format of the picture editing software paint.net
 
