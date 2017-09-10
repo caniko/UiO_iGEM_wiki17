@@ -9,97 +9,313 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/allStyle.css" rel="stylesheet">
+  <!--  <link href="css/main.css" rel="stylesheet">
 
   <!--  <link rel="stylesheet" type="text/css" href="http://2017.igem.org/Template:UiOslo_Norway/CSS?action=raw&ctype=text/css" />
   --> </head>
-<style>
-* {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-/* Three columns side by side */
-.column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-}
 
-/* Display the columns below each other instead of side by side on small screens */
-@media (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="header" role="navigation">
+    <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand navbar-brand-logo" href="index.html">
+                <div class="logo">
+                  <img class="img-circle" src="images/uioLogo.jpg" alt="logo">
+               </div>
+             </a>
+       </div>
+  <!-- Header starts -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown"><a href="#">Project <i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <li><a href="description.html">Description</a></li>
+            <li><a href="results.html">Result</a></li>
+            <li><a href="parts.html">Parts</a></li>
+            <li><a href="design.html">Design</a></li>
+          </ul></li>
 
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+        <li class="dropdown"><a href="#">Modelling <i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <li><a href="firstmodel.html">first</a></li>
+            <li><a href="secondmodel.html">second</a></li>
+          </ul></li>
 
-/* Some left and right padding inside the container */
-.container {
-    width: 500px;
-    margin: auto;
-}
+        <li class="dropdown"><a href="#">Notebook <i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <li><a href="lab.html">Lab</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+          </ul></li>
 
-/* Clear floats */
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+        <li class="dropdown"><a href="#">Human Practices <i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <li><a href="description.html">Public Engagement</a></li>
+            <li><a href="results.html">Integrated Practices</a></li>
+            <li><a href="parts.html">Collaborations</a></li>
+          </ul></li>
 
-.name {
-    padding: 10px 160px;
-    margin: auto;
-}
-
-.title {
-    color: grey;
-    padding: 4px 160px 8px 160px;
-    margin: auto;
-}
-
-.picture {
-    width: 100%;
-    padding: 0 160px;
-    margin: auto;
-}
-</style>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="https://drive.google.com/uc?id=0B2B9eaTk9cRuZ25aQ2dWR0lzVU0" class="picture" alt="Eirik Sundmark">
-      <div class="container">
-        <h2 class="name">Eirik Sundmark</h2>
-        <p class="title">Team-leader &amp; Molecular biologist</p>
-        <p>
-          Currently studying informatics, having previously completed a M. Sc. in molecular biology.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="https://drive.google.com/uc?id=0B2B9eaTk9cRuUWhCTHpMeTd4b1E" class="picture" alt="Can H. Tartanoglu">
-      <div class="container">
-        <h2 class="name">Can H. Tartanoglu</h2>
-        <p class="title">Biolab-leader &amp; Molecular biologist</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="https://drive.google.com/uc?id=0B2B9eaTk9cRuRmZadWEwaTVMdDg" class=picture alt="Dejana Mitrovic">
-      <div class="container">
-        <h2 class="name">Dejana Mitrovic</h2>
-        <p class="title">Biolab-leader &amp; Molecular biologist</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-      </div>
-    </div>
-  </div>
+        <li class="dropdown"><a href="#">Team <i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <li><a href="description.html">Team Members</a></li>
+            <li><a href="results.html">Attributions</a></li>
+          </ul></li>
+      </ul>
 </div>
+    </div>
+</nav>
+<!-- Header ends  -->
+
+<!-- Body begins  -->
+<!--  -->
+<section id="team">
+        <div class="container makeSpace"  id="bootstrap-overrides">
+            <div class="row">
+                <h1 class="title text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Meet the Team</h1>
+                <p class="text-center wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud </p>
+
+                   <div class="container">
+                          <div class="row">
+                              <div class="col-md-9 col-sm-7">
+                                  <div class="row">
+                                       <div class="col-md-12 col-sm-12 col-md-offset-2">
+                                          <div class="single-blog blog-details two-column">
+                                              <div class="post-thumb">
+                                                  <a href="#"><img src="images/7.jpg" class="img-responsive" alt=""></a>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+
+
+                    <!-- Wrapper for slides -->
+                    <div class="container makeSpace">
+                        <div class="item active">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Eirik</h2>
+                                        <p>Team Leader &amp; Molecular Biologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Hilde</h2>
+                                        <p>Physicsist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Elisabeth</h2>
+                                        <p>Physics &amp; Social Media</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Helene</h2>
+                                        <p>Physicist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container">
+                    <div class="item active">
+                        <div class="item">
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Elena</h2>
+                                        <p>Molecular Biologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="team-single-wrapper">
+                                <div class="team-single">
+                                    <div class="person-thumb">
+                                        <img src="images/1.jpg" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+                                <div class="person-info">
+                                    <h2>Adel</h2>
+                                    <p>Molecular Biologist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="team-single-wrapper">
+                                <div class="team-single">
+                                    <div class="person-thumb">
+                                        <img src="images/1.jpg" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+                                <div class="person-info">
+                                    <h2>Havvah</h2>
+                                    <p>Molecular Biologist</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Dejana</h2>
+                                        <p>Molecular Biologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Can</h2>
+                                        <p>Molecular Biologist &amp; Informatician</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Kristina</h2>
+                                        <p>Molecular Biologist</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-6">
+                                <div class="team-single-wrapper">
+                                    <div class="team-single">
+                                        <div class="person-thumb">
+                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="person-info">
+                                        <h2>Aman</h2>
+                                        <p>Informatician</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#team-->
+
+
+
+
+  <footer id="footer">
+      <div class="container">
+          <div class="row">
+
+
+              <div class="col-md-6 col-sm-12" id="footerurl">
+                  <div class="img_wrap">
+                      <h2 align="center">We are Here</h2>
+                      <img class="footer1 img_img" src="images/beer.gif">
+                      <div class="contact-info bottom img_description_layer" align="center">
+                          <div class="image-description">
+                              <address>
+                                  <i class="fa fa-map-marker"></i>
+                                  <p><a href="https://www.google.no/maps/place/Problemveien+7,+0313+Oslo/@59.9401331,10.7180943,17z/data=!3m1!4b1!4m5!3m4!1s0x46416de7a8e9c1a1:0x917a1b33171c58b1!8m2!3d59.9401331!4d10.720283">Problemveien 7,Oslo, Norway</a></p>
+                              </address>
+                              <div>
+                                  <i class="fa fa-envelope"></i>
+                                  <p><a href="mailto:uioslonorway@gmail.com">uioslonorway@gmail.com</a></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                  <div class=" img_wrap">
+                      <h2 align="center">Follow Us Here</h2>
+                      <img class="footer2 img_img" src="images/cat.gif">
+                      <div class="row img_description_layer">
+                          <div class="footer-icons" align="center">
+
+                              <br><br> <a href="https://www.facebook.com/uioslonorwayigem/"><i class="fa fa-facebook fa-5x"></i></a> <br>
+                              <br><a href="https://twitter.com/UiOslo_iGEM"><i class="fa fa-twitter fa-5x"></i></a> <br><br>
+                              <a href="https://www.instagram.com/uioslo_igem/"><i class="fa fa-instagram fa-5x"></i></a>
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!--/#footer-->
+
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

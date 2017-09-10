@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery gifPlayer Simple Demo</title>
+
+		<script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+	</head>
+	<body>
+		<script>
+			var imageSwap = function () {
+				var $this = $(this);
+				var newSource = $this.data('swap');
+				$this.data('swap', $this.attr('src'));
+				$this.attr('src', newSource);
+			}
+
+			$(function () {
+				$('img.playgif').hover(imageSwap, imageSwap);
+			});
+		</script>
+
+		<a href="#" target="_blank">
+			<img class="playgif" data-swap="beer.gif" src="beer1.bmp"  height="200" width="400" />
+		</a>
+	</body>
+</html>

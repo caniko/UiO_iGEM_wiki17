@@ -9,9 +9,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/allStyle.css" rel="stylesheet">
-
+    <!--<link href="css/main.css" rel="stylesheet">-->
   <!--  <link rel="stylesheet" type="text/css" href="http://2017.igem.org/Template:UiOslo_Norway/CSS?action=raw&ctype=text/css" />
-  --> </head>
+  --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
 
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" id="header" role="navigation">
@@ -41,11 +42,8 @@
             <li><a href="design.html">Design</a></li>
           </ul></li>
 
-        <li class="dropdown"><a href="#">Modelling <i class="fa fa-angle-down"></i></a>
-          <ul role="menu" class="sub-menu">
-            <li><a href="firstmodel.html">first</a></li>
-            <li><a href="secondmodel.html">second</a></li>
-          </ul></li>
+        <li class="dropdown"><a href="modelling.html">Modelling <i class="fa fa-angle-down"></i></a>
+          </li>
 
         <li class="dropdown"><a href="#">Notebook <i class="fa fa-angle-down"></i></a>
           <ul role="menu" class="sub-menu">
@@ -62,8 +60,8 @@
 
         <li class="dropdown"><a href="#">Team <i class="fa fa-angle-down"></i></a>
           <ul role="menu" class="sub-menu">
-            <li><a href="description.html">Team Members</a></li>
-            <li><a href="results.html">Attributions</a></li>
+              <li><a href="team.html">Team Members</a></li>
+              <li><a href="attributions.html">Attributions</a></li>
           </ul></li>
       </ul>
 </div>
@@ -72,11 +70,12 @@
 <!-- Header ends  -->
 
 <!-- Body begins  -->
-<div class="container firstpara">
+  <div class="container" id="bootstrap-overrides">
+<div class="container">
 <!-- First section begins  -->
-  <h1> U i O s l o : L A S I E R  </h1>
-  <img src="https://drive.google.com/uc?id=0B2B9eaTk9cRuc09fOE1XelVFemM"
-  alt="Team-picture taken 18.08.2017" style="height:70%; width: 70%; display: block; margin: 5px auto 30px auto">
+<br/> <br/>
+    <h1 > U i O s l o : L A S I E R  </h1>
+
   <p>
     UiOslo iGEM 2017 is based in the University of Oslo, and have taken up the challenge to make
     a yeast-based biological laser, or <i>biolaser</i>.
@@ -130,113 +129,57 @@
   protein solution, and then taking it a step further by trying to use live
   yeast cells as the gain medium.
 </p>
+</div>
+  </div>
 
-
-<!-- Third section ends  -->
-<footer id="footer">
+    <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="text-center bottom-separator">
-                    <img src="images/home/under.png" class="img-responsive inline" alt="">
-                </div>
-                <div class="col-md-6">
-                    <div class="testimonial bottom">
-                        <h2>Testimonial</h2>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
-                                <h3><a href="#">- Jhon Kalis</a></h3>
-                            </div>
-                         </div>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
-                                <h3><a href="">- Abraham Josef</a></h3>
-                            </div>
+
+
+                <div class="col-md-6 col-sm-12" id="footerurl">
+                    <div class="img_wrap">
+                    <h2 align="center">We are Here</h2>
+                   <img class="footer1 img_img" src="images/beer.gif">
+                    <div class="contact-info bottom img_description_layer" align="center">
+                        <div class="image-description">
+                        <address>
+                            <i class="fa fa-map-marker"></i>
+                            <p><a href="https://www.google.no/maps/place/Problemveien+7,+0313+Oslo/@59.9401331,10.7180943,17z/data=!3m1!4b1!4m5!3m4!1s0x46416de7a8e9c1a1:0x917a1b33171c58b1!8m2!3d59.9401331!4d10.720283">Problemveien 7,Oslo, Norway</a></p>
+                        </address>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:uioslonorway@gmail.com">uioslonorway@gmail.com</a></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <h2 class="fa fa-envelope>Contacts</h2>
-                        <address">
-                        E-mail: <a href="mailto:uioslonorway@gmail.com">uioslonorway@gmail.com</a> <br>
-                        Phone: +1 (123) 456 7890 <br>
-                        Fax: +1 (123) 456 7891 <br>
-                      </address><br>
-                        <h2 class="fa fa-map-marker">Address</h2>
-                        <address>
-                        Problemveien 7, <br>
-                        Oslo, Norway <br>
-                        </address>
+                    </div>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <div class="copyright-text text-center">
-                        <p>&copy; Your Company 2014. All Rights Reserved.</p>
-                        <p>Designed by <a target="_blank" href="">UiOslo_iGEM</a></p>
+                <div class="col-md-6 col-sm-12">
+                    <div class=" img_wrap">
+                    <h2 align="center">Follow Us Here</h2>
+                    <img class="footer2 img_img" src="images/cat.gif">
+                    <div class="row img_description_layer">
+                        <div class="footer-icons" align="center">
+
+                           <br><br> <a href="https://www.facebook.com/uioslonorwayigem/"><i class="fa fa-facebook fa-5x"></i></a> <br>
+                            <br><a href="https://twitter.com/UiOslo_iGEM"><i class="fa fa-twitter fa-5x"></i></a> <br><br>
+                            <a href="https://www.instagram.com/uioslo_igem/"><i class="fa fa-instagram fa-5x"></i></a>
+
+                        </div>
+
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-<footer id="footer">
-    <div class="container">
-<!-- Footer section begins  -->
-      <div class="row">
-          <div class="col-sm-8">
-            <i class="fa fa-map-marker"></i>
-  					<p><span>Problemveien 7,</span>
-               Oslo, Norway</p>
-          </div>
-
-          <div>
-  					<i class="fa fa-phone"></i>
-  					<p><a href="tel:+1 555 123456">+1 555 123456</a></p>
-  				</div>
-
-  				<div>
-  					<i class="fa fa-envelope"></i>
-  					<p><a href="mailto:uioslonorway@gmail.com">uioslonorway@gmail.com</a></p>
-  				</div>
-
-
-
-
-
-          <div class="col-sm-4">.col-sm-4</div>
-
-          <div class="footer-icons">
-
-            <a href="https://www.facebook.com/uioslonorwayigem/"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/UiOslo_iGEM"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/uioslo_igem/"><i class="fa fa-instagram"></i></a>
-
-          </div>
-
-
-
-
-
-
-			</div>
-
-		</footer>
-
-<!-- Footer section ends  -->
-
+    <!--/#footer-->
 
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 </body>
 
