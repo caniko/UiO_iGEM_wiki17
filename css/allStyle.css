@@ -17,15 +17,21 @@
     background: url("../images/yeast.jpg");
       background-size: cover ;
       background-repeat: repeat-xx;
-      position: relative;
-      width: 85%;
+      position: absolute;
+      width: 95%;
       height: 100px;
       margin-left: auto;
       margin-right: auto;
   }
 
+
   html {
     height: 100%;
+  }
+
+  .img-square{
+    height:50px;
+    width: 50px;
   }
 
   a{
@@ -103,9 +109,10 @@
   }
 
   #bootstrap-overrides{
-      background-color: #c0a16b;
+      background-color: #DDDDDD;
       margin: 20px 20px 20px 20px;
       padding-bottom: 20px;
+      width: 100%;
   }
 
   .btn-common:hover,
@@ -576,6 +583,11 @@ ul.sub-menu {
 }
 
 
+
+.portfolio-wrapper{
+  margin-right: 20px;
+  margin-left: 20px;
+}
 .portfolio-single:hover .portfolio-view{
   display: block;
   -webkit-animation: fadeInUp 400ms;
@@ -1570,6 +1582,16 @@ responsive.css
     margin-bottom: 30px;
   }
 
+  .Library {
+    height: 700px;
+    width: 120px;
+  }
+  .Library:hover {
+    content: url('http://www.furrytalk.com/wp-content/uploads/2010/05/2.jpg');
+    height: 700px;
+    width: 120px;
+  }
+
   #company-information.choose .padding-top {
     padding-top: 0;
   }
@@ -1628,6 +1650,7 @@ responsive.css
   }
 
   /* Portfolio */
+
 
   .project-name h2 {
     margin-top: 20px;
