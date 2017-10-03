@@ -9,10 +9,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/allStyle.css" rel="stylesheet">
-  <!--  <link href="css/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
 
-  <!--  <link rel="stylesheet" type="text/css" href="http://2017.igem.org/Template:UiOslo_Norway/CSS?action=raw&ctype=text/css" />
-  --> </head>
+    <!--  <link href="css/main.css" rel="stylesheet">
+
+    <!--  <link rel="stylesheet" type="text/css" href="http://2017.igem.org/Template:UiOslo_Norway/CSS?action=raw&ctype=text/css" />
+    --> </head>
 
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" id="header" role="navigation">
@@ -79,28 +83,137 @@
                 Ut enim ad minim veniam, quis nostrud </p>
             </div>
 
-                <section id="projects" class="padding-top">
-                    <div class="container">
+            <div class="container">
                         <div class="row">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-3 col-md-4 portfolio-item branded">
-                                        <div class="portfolio-wrapper">
-                                            <div class="portfolio-single">
-                                                <div class="portfolio-thumb">
-                                                    <img src="images/1.jpg" class="img-responsive" alt="">
-                                                </div>
-                                                <div class="portfolio-view">
-                                                    <ul class="nav nav-pills">
-                                                        <li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
-                                                        <li><a href="images/1.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="portfolio-info ">
-                                                <h2>Eirik - Team Leader &amp; Molecular Biologist</h2>
+
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <div class="img-hover-overlay" id="card">
+                                    <div class="front">
+                                        <img class="team-picture" src="images/Team_Pictures/Eirik.jpg">
+                                    </div>
+                                    <div class="back img-hover-overlay">
+                                        <img src="images/Team_Pictures/Screenshot_1.png">
+                                        <h2><span>Studying Masters in Molecular Biology<span class='spacer'></span><br /><span class='spacer'></span>Likes to read and play board games, and work at the local student pub.</span></h2>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Eirik</h2>
+                                    <p> Team Leader and Molecular Biologist </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <div class="img-hover-overlay">
+                                <img class="team-picture" src="images/Team_Pictures/Aman.jpg">
+                                    <h2>Aman</h2>
+                                    <p> Informatician </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <div class="img-hover-overlay">
+                                <img class="team-picture" src="images/Team_Pictures/Hilde.jpg">
+                                    <h2>Hilde</h2>
+                                    <p> Physicist </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <div class="img-hover-overlay">
+                                <img class="team-picture" src="images/Team_Pictures/Dejana.jpg">
+                                    <h2>Dejana</h2>
+                                    <p> Molecular Biologist </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <div class="img-hover-overlay">
+                                <img class="team-picture" src="images/Team_Pictures/Can.jpg">
+                                    <h2>Can</h2>
+                                    <p> Molecular Biologist </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                <div class="img-hover-overlay">
+                                <img class="team-picture" src="images/Team_Pictures/Helene.jpg">
+                                    <h2>Helene</h2>
+                                    <p> Physicist </p>
+                                </div>
+
+                            </div>
+
+
+
+                            <!--
+                                    <div class="col-xs-6 col-sm-3 col-md-6">
+                                        <div class="team-picture">
+                                            <div class="img-hover-overlay">
+                                                <img src="images/Team_Pictures/Eirik.jpg" /></a>
+                                                <div class="overlay">
+                                                    <span>This is some text I want to display</span></div>
                                             </div>
                                         </div>
                                     </div>
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                        <div class="team-picture">
+                                            <div class="img-hover-overlay">
+                                                <img src="images/Team_Pictures/Aman.jpg" /></a>
+                                                <div class="overlay">
+                                                    <span>This is some text I want to display</span></div>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                        <div class="team-picture">
+                                            <div class="img-hover-overlay">
+                                                <img src="images/Team_Pictures/Hilde.jpg" /></a>
+                                                <div class="overlay">
+                                                    <span>This is some text I want to display</span></div>
+                                            </div>
+                                        </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                        <div class="team-picture">
+                                            <div class="img-hover-overlay">
+                                                <img src="images/Team_Pictures/Kristina.jpg" /></a>
+                                                <div class="overlay">
+                                                    <span>This is some text I want to display</span></div>
+                                            </div>
+                                        </div>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 col-md-6">
+                                        <div class="team-picture">
+                                            <div class="img-hover-overlay">
+                                                <img src="images/Team_Pictures/Dejana.jpg" /></a>
+                                                <div class="overlay">
+                                                    <span>This is some text I want to display</span></div>
+                                            </div>
+                                        </div>
+                            </div>   -->
+                                    <!--        <div class="col-xs-6 col-sm-6 col-md-4 portfolio-item branded folio">
+                                                <div class="portfolio-wrapper">
+                                                    <div class="portfolio-single">
+                                                        <div class="portfolio-thumb">
+                                                            <img src="images/1.jpg" class="img-responsive" alt="">
+                                                        </div>
+                                                        <div class="portfolio-view">
+                                                            <ul class="nav nav-pills">
+                                                                <li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+                                                                <li><a href="images/1.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="portfolio-info ">
+                                                        <h2>Hilde - Physicsist</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 portfolio-item branded folio">
                                         <div class="portfolio-wrapper">
                                             <div class="portfolio-single">
@@ -280,14 +393,15 @@
                                                 <h2>Sailing Vivamus</h2>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>  -->
 
 
 
 
-                                </div>
+
                             </div>
 
+                        </div>
             </div>
         </div>
     </section>
@@ -341,9 +455,16 @@
   <!--/#footer-->
 
   </div>
+  <script>
+      $("#card").flip({
+          axis: 'y',
+          trigger: 'hover'
+      });
+  </script>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
 <script src="js/bootstrap.min.js"></script>
 </body>
 
